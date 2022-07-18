@@ -33,6 +33,9 @@ app.post('/users', (req, res) => {
     // res.send(JSON.stringify(newUser))
     res.json(newUser);
 })
+app.get('/ahsan/:ahsanId', (req, res) => {
+    res.send('Hi ahsan')
+})
 
 app.get('/users/:id', (req, res) => {
     const id = req.params.id;
